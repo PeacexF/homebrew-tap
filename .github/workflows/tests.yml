@@ -9,7 +9,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: Homebrew/actions/setup-homebrew@master
+      - uses: Homebrew/actions/setup-homebrew@8f3d1ec8a696b3b9d9a6c3696b6c73033cab69e4
       - run: brew tap PeacexF/tap
       # the default lints a file GoReleaser generates and i cant reformat.
       - run: brew readall --aliases --os=all --arch=all peacexf/tap
